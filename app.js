@@ -107,7 +107,7 @@ app.put('/ideas/:id',  (req, res) => {
   .then(idea => {
     //new values
     idea.title = req.body.title;
-    idea.details - req.body.details;
+    idea.details = req.body.details;
 
     idea.save()
       .then(idea => {
