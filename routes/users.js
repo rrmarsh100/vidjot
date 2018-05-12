@@ -8,12 +8,12 @@ const router = express.Router();
 require('../models/User');
 const User = mongoose.model('users');
 
-//user login route
+// User Login Route
 router.get('/login', (req, res) => {
   res.render('users/login');
 });
 
-//User Register Route
+// User Register Route
 router.get('/register', (req, res) => {
   res.render('users/register');
 });
